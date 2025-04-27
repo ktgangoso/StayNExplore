@@ -17,6 +17,7 @@ import { useTheme } from '@mui/material/styles';
 import Home from './components/Home.tsx'
 import About from './components/About.tsx'
 import Menu from './components/Menu.tsx';
+import Room from './components/Room.tsx';
 
 function App() {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -36,6 +37,7 @@ function App() {
   const navItems = [
     { label: 'Home', id: 'home' },
     { label: 'Menu', id: 'menu' },
+    { label: 'Rooms', id: 'room' },
     { label: 'About', id: 'about' },
     { label: 'Contact', id: 'contact' },
   ];
@@ -88,10 +90,11 @@ function App() {
       </AppBar>
 
       <Toolbar />
-      
+
       <Box>
         <Home />
         <Menu />
+        <Room/>
         <About />
       </Box>
 

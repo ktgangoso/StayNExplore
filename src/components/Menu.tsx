@@ -1,14 +1,13 @@
 import React from 'react'
-import { Box, Typography } from '@mui/material'
+import { Box, Typography, Button } from '@mui/material'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-
 
 
 function Menu() {
     return (
         <div id='menu'>
-            <Box sx={{ height: "100vh", margin: 0, padding: "2rem" }}>
+            <Box sx={{ height: "100vh", margin: 0, padding: "1rem" }}>
                 <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "row" }}>
                     <Box sx={{ width: "100%" }}>
                         <Typography sx={{ fontSize: "2rem", fontWeight: "900" }}>Title</Typography>
@@ -89,7 +88,10 @@ function Menu() {
                                 </Box>
                                 <Box sx={{ display: "flex", justifyContent: "space-between", flexDirection: "column", gap: "1rem" }}>
                                     <Box sx={{ display: "flex", justifyContent: "flex-end", alignItems: "center" }}>
-                                        <ShoppingCartIcon />
+                                        <Button variant="outlined">
+                                            <ShoppingCartIcon />
+                                            Book Now!
+                                        </Button>
                                     </Box>
                                     <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", gap: ".5rem", textAlign: "center" }}>
                                         <Box>
